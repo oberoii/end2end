@@ -284,5 +284,5 @@ def check_token():
         return jsonify({'valid': is_valid, 'message': message})
     return jsonify({'error': 'No token provided'})
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(host='0.0.0.0', port=21412)
